@@ -3,7 +3,7 @@
 This is a solution to the [Advice generator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db) in vue 3.
 
 
-[Preview Demo](https://main--rukkies-adviceapp.netlify.app/)
+[Preview Demo](https://rukkies-adviceapp.netlify.app/)
 
 ## Getting Started
 - clone this repository
