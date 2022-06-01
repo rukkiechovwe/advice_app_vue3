@@ -7,12 +7,13 @@
   src: url(/src/assets/font/Manrope-ExtraBold.ttf);
 }
 :root {
-  --light-cyan: hsl(193, 38%, 86%);
+  --light-cyan: hsl(218, 23%, 16%);
   --neon-green: hsl(150, 100%, 66%);
   --grayish-blue: hsl(217, 19%, 38%);
-  --dark-grayish-blue: hsl(217, 19%, 24%);
-  --dark-blue: hsl(0, 0%, 100%);
-  --nav-bg: hsl(218, 23%, 16%);
+  --dark-grayish-blue: hsl(0, 0%, 100%);
+  --dark-blue: hsl(153.3, 100%, 98.2%);
+  --nav-border: 1px solid #52ffa8ab;
+  --nav-text: hsl(217, 19%, 24%);
 }
 [data-theme="dark"] {
   --light-cyan: hsl(193, 38%, 86%);
@@ -20,7 +21,8 @@
   --grayish-blue: hsl(217, 19%, 38%);
   --dark-grayish-blue: hsl(217, 19%, 24%);
   --dark-blue: hsl(218, 23%, 16%);
-  --nav-bg: hsl(0, 0%, 100%);
+  --nav-border: 1px solid #52ffa82b;
+  --nav-text: hsl(193, 38%, 86%);
 }
 
 *,
@@ -66,8 +68,9 @@ img {
   width: 100%;
 }
 .nav {
-  background: var(--nav-bg);
-  color: var(--dark-blue);
+  color: var(--nav-text);
+  background: var(--dark-blue);
+  border-bottom: var(--nav-border);
   display: flex;
   justify-content: space-between;
   padding: 10px 0.5rem;
@@ -80,7 +83,7 @@ img {
 .theme {
   width: 26px;
   height: 26px;
-  color: var(--dark-blue);
+  color: var(--nav-text);
 }
 @media screen and (min-width: 475px) {
   .nav {
